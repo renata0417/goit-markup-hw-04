@@ -1,0 +1,586 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --logo-color: #FFFFFF;
+    --mailtel-logo-color: rgba(255, 255, 255, 0.6);
+    --hero-footer-color:  #2F303A;
+    --additional-background-color: #f5f4fa;
+    --main-background-color: #fff; 
+    --white-additional-color: #fff; 
+    --border-header-color: rgba(236, 236, 236, 1);
+     --grey-svg-color: #afb1b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* ul {
+  list-style: none;
+  font-style: normal;
+} */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    line-height: 1.7; 
+    color: var(--primary-text-color);
+    background-color: var(--main-background-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* .header {
+  background-color: var(--main-background-color);
+} */
+
+.hero,
+.footer {
+  background-color: var(--hero-footer-color);
+}
+
+/* main {
+  background-color: var(--main-background-color);
+} */
+
+.header{
+  background-color: var(--main-background-color);
+  border-bottom: 1px solid var(--border-header-color);
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+
+.header-list-link {
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.header-list,
+.contacts {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-list li:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.contacts li:first-child {
+  margin-right: 50px;
+}
+
+.header-list-link:hover,
+.header-list-link:focus  {
+  color: var(--accent-color);
+}
+
+.header-list-link:focus {
+  color: var(--accent-color);
+}
+
+.header-list .header-list-link.current {
+  color: var(--accent-color);
+}
+
+.icon-contacts {
+  display: inline-block;
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+
+.contacts-link {
+  display: inline-block;
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.contacts-link:hover {
+  color: var(--accent-color);
+}
+
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-address-map {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--mailtel-logo-color);
+} 
+
+.footer-address-map:hover {
+    color: var(--logo-color);
+}
+
+.footer-email,
+.footer-tel {
+  display: flex;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--mailtel-logo-color);
+}
+/* 
+.footer-items {
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--mailtel-logo-footer);
+}
+
+.footer-items:hover {
+    color: var(--mailtel-logo-color);
+}
+
+.footer-items:focus {
+  color: var(--mailtel-logo-color);
+} */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.icon-list-footer {
+  display: flex;
+}
+
+.footer-list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-email:hover {
+    color: var(--logo-color);
+}
+
+.footer-tel:hover {
+    color: var(--logo-color);
+}
+
+.footer-logo {
+  display: flex;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--logo-color);
+  text-decoration: none;
+}
+
+.footer .icon-list {
+  padding: 0 0 0;
+}
+
+.thumb {
+  margin-left: 70px;
+}
+
+.thumb-title {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--white-additional-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.thumb-link {
+  display: inline-block;
+  align-items: center;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--main-background-color);
+}
+
+.thumb-link footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-additional-color);
+}
+
+.thumb-link footer li:last-child {
+  margin-right: 0;
+}
+
+.thumb-link:hover {
+  background-color: var(--accent-color);
+}
+
+.icon-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team {
+  background-color: var(--additional-background-color);
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-title {
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 30px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  color: var(--logo-color);
+}
+
+
+.hero-btn {
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  background: var(--accent-color);
+  color: var(--logo-color);
+  border: none;
+  border-radius: 4px;
+}
+
+.icon-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--additional-background-color);
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 0;
+}
+
+.features-list li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.features-item-title {
+  width: 270px;
+  margin: 0 auto 10px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-item-text {
+  width: 270px;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--primary-text-color);
+}
+
+.galery-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.galery-list li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.galery-title {
+  width: 376px;
+  margin: 0 auto 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+ul.galery-list {
+  padding: 0;
+  margin: 0;
+}
+
+.team-list {
+  display: flex;
+  width: calc(100% - 60px / 4);
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.team-list {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+
+.team-link {
+  display: flex;
+  justify-content: center;
+  fill: var(--primary-text-color);
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.icon-team:not(:first-child) {
+  margin-left: 10px;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-team:hover {
+  fill: #ffffff;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.team-title {
+  margin: 0 auto 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  text-align: center;
+}
+
+.team-item-image {
+  display: block;
+}
+
+.team-item-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--title-text-color);
+}
+
+.team-text-thumb {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background:rgba(255, 255, 255, 1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-text-color);
+}
+
+.portfolio-button-list {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-image {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.portfolio-text-thumb {
+  border: 1px solid rgba(238, 238, 238, 1);
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.portfolio-button-list li:not(:first-child) {
+  margin-left: 8px;
+}
+
+.portfolio-button {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  min-width: 145px;
+  color: var(--title-text-color);
+  background-color: var(--additional-background-color);
+}
+
+.portfolio-button:hover {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-button:focus {
+  color: var(--main-background-color);
+  background-color: var(--additional-background-color);
+}
+
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-list > .portfolio-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-list > .portfolio-list-item:hover {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+}
+
+.portfolio-item-image {
+  margin-bottom: 20px;
+}
+
+.portfolio-item-header {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-text-color);
+}
+
+.portfolio-item-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-text-color);
+}
+
