@@ -45,7 +45,9 @@ a {
 
 .img {
   display: block;
+  object-fit: cover;
   max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -510,12 +512,6 @@ ul.team-list {
   margin-bottom: 50px;
 }
 
-.portfolio-image {
-  display: block;
-  object-fit: cover;
-  max-width: 100%;
-}
-
 .portfolio-text-thumb {
   border: 1px solid rgba(238, 238, 238, 1);
   padding: 20px 24px;
@@ -536,7 +532,6 @@ ul.team-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  min-width: 145px;
   color: var(--title-text-color);
   background-color: var(--additional-background-color);
 }
